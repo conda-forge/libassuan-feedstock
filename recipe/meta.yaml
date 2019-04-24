@@ -1,6 +1,6 @@
 {% set name = "libassuan" %}
-{% set version = "2.5.2" %}
-{% set sha256 = "986b1bf277e375f7a960450fbb8ffbd45294d06598916ad4ebf79aee0cb788e7" %}
+{% set version = "2.5.3" %}
+{% set sha256 = "91bcb0403866b4e7c4bc1cc52ed4c364a9b5414b3994f718c70303f7f765e702" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script:
     - ./configure --prefix=$PREFIX
     - make
