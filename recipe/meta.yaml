@@ -36,9 +36,9 @@ test:
 about:
   home: https://www.gnupg.org/software/libassuan/index.html
   summary: Libassuan is a small library implementing the so-called Assuan protocol.
-  license: LGPL-3
+  license: LGPL-2.1-or-later
   license_family: GPL
-  license_file: COPYING
+  license_file: COPYING.LIB
   description: |
     Libassuan is a small library implementing the so-called Assuan protocol.
     This protocol is used for IPC between most newer GnuPG components.
