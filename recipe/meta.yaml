@@ -13,10 +13,6 @@ source:
 
 build:
   number: 0
-  script:
-    - ./configure --prefix=$PREFIX
-    - make
-    - make install
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('libassuan', max_pin='x') }}
@@ -25,7 +21,10 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - make  # [unix]
+    - make       # [unix]
+    - libtool    # [unix]
+    - automake   # [unix]
+    - gnuconfig  # [unix]
   host:
     - libgpg-error
 
