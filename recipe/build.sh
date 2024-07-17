@@ -6,6 +6,10 @@ if [[ $CONDA_BUILD_CROSS_COMPILATION == 1 && $target_platform == osx-arm64 ]]; t
 	cp -v $BUILD_PREFIX/share/gnuconfig/config.* ./build-aux
 fi
 
+if [[ "${target_platform}" == osx-* ]]; then
+    export CFLAGS="$CFLAGS -std=c89"
+fi
+
 autoreconf -if
 ./configure --prefix=$PREFIX
 make

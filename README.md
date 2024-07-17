@@ -17,14 +17,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/libassuan-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/libassuan-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -202,4 +195,5 @@ Feedstock Maintainers
 =====================
 
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@xhochy](https://github.com/xhochy/)
 
